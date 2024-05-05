@@ -1,19 +1,29 @@
-// *Question 1:* Famous Quote: Find a quote from a famous person you admire. Print the quote and the name of its author. Your output should look something like the following, including the quotation marks:
-// "Albert Einstein once said, “A person who never made a mistake never tried anything new.
-let author: string = "Abert Einstein";
-console.log(`${author} once said “A person who never made a mistake never tried anything new" `);
+// *Question 19:* Dinner Guests: Use one of your programs from Exercises 14 through 18 to print a message indicating
+//  the number of people you are inviting to dinner.
 
 
-// *Question 3:* Stripping Names: Store a person’s name, and include some whitespace characters at the beginning and end of the name. Use "\t" (tab) and "\n" (new line) at least once. Print the name once, so the whitespace around the name is displayed. 
-// Then print the name after stripping the white spaces
+let peoples : string[] = ['vincenzo','beak','haein','goblin','lee min ho'];
+console.log("i am inviting " + peoples.length + " peoples to dinner.") ;
 
 
-let stripping :string = "\n\tbushra asghar\t\n";
-console.log(stripping);
-console.log(stripping.trim());
+// Question 20:* Think of something you could store in an array. For example, you could make a list of mountains,
+//  rivers, countries, cities, languages, or anything else you’d like. Write a program that creates a list containing these items.
+console.log("\n\tquestiom 20\n\t");
+let languages: string[] = ['urdu','english','hindi','korean','thai','chinese','arabic'];
+languages.forEach(languages =>{
+    console.log(`I want to learn more languages like ${languages}`);
+    
+})
+// console.log('I want to learn ', languages);
 
- 
-
-
+// *Question 21:* Think of something you could store in a TypeScript Object.
+//  Write a program that creates Objects containing these items.
+console.log("\n\tquest 21\t\n");
+let book : {title: string , published: number, author:string} = {
+    title:"Harry potter",
+    published:2000,
+    author: "J.K Rowling",
+}
+console.log(`I read an amazing book ${book.title} of ${book.author} published in ${book.published}`);
 
 
